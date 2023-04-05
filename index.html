@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- MyCss -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="my-5">
+      <div class="container">
+        <div class="row text-center">
+          <h1 class="col-12">To-Do List</h1>
+        </div>
+        <form class="row justify-content-center" id="task-form">
+          <input
+            type="text"
+            placeholder="What do you think about?"
+            name="content"
+            class="col-8"
+            id="task-form-text"
+          />
+          <input
+            type="submit"
+            class="btn col-md-1 col-3"
+            value="ADD"
+            id="task-form-submit"
+          />
+        </form>
+      </div>
+    </header>
+    <section class="container">
+      <h2 class="mb-4">Tasks:</h2>
+      <div id="tasks"></div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="./js/jquery.slim.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- My JS -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
